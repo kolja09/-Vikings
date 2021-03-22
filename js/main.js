@@ -1,8 +1,9 @@
 $(function(){
-
-  $('.menu__btn').on('click', function(){
-    $('.menu__list').toggleClass('menu__list--active')
+  $('.header__burger').click(function(){
+    $('.header__burger,.menu__list').toggleClass('active')
+    $('body').toggleClass('lock')
   });
+
   
  $('.heroes__slider-img').slick({
   slidesToShow: 1,
